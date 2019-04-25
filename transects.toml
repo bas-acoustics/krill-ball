@@ -1,0 +1,26 @@
+#===============================================================================
+# TRANSECT FILE
+# Defines the start and end times for a given transect, list the raw
+# and environmental files making up the transect, and references to
+# associated metadata and calibration files.
+#
+# This data is released by the British Antarctic Survey for
+# demonstration and test purposes only.
+#===============================================================================
+
+[[transect]]
+name = "Krill Ball" # name of the transect
+starttime = 2009-12-15T12:19:16Z # time of the first ping in the transect
+endtime = 2009-12-15T12:38:19Z # time of the last ping in the transect
+#metadata_file = "https://github.com/bas-acoustics/krill-ball/blob/master/JR230-metadata.toml"# associated cruise metadata file
+#calibration_file = "https://github.com/bas-acoustics/krill-ball/blob/master/ZDLP-D20091210-cal.toml" # associated calibration file
+#see above comments out - I am a little confused as I thought these had changed to being "include" - now changed.
+
+temperature = 4 # transect-specific temperature (Degrees C)
+salinity = 33 # transect-specifi salinity (PSU)
+soundspeed = 1462 # transect-specific sound speed value (m s-1)
+keywords = ["impulse noise", "krill swarm"] # list of most characteristic features in the transect
+area = ["Scotia Sea", "Southern Atlantic"] # list of geographical areas along the transect
+frequencies = [38, 120, 200]
+raws = ["https://github.com/bas-acoustics/krill-ball/blob/master/JR230-D20091215-T121917.raw"] # list of raw files
+env = [] # list of environmental files
